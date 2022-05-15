@@ -1,0 +1,3 @@
+C:/Users/prutm/source/repos/OpenGL1/CMakeFiles/OpenGL1.dir
+C:/Users/prutm/source/repos/OpenGL1/CMakeFiles/ALL_BUILD.dir
+C:/Users/prutm/source/repos/OpenGL1/CMakeFiles/ZERO_CHECK.dir
