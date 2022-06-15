@@ -130,7 +130,7 @@ int main()
         world = glm::scale(world, glm::vec3(1, 1, 1));
         world = glm::translate(world, glm::vec3(0, 0, 1));
 
-        glm::mat4 view = glm::lookAt(glm::vec3(0, 5, -5), glm::vec3(0, 3, 0), glm::vec3(0, 3, 0));
+        glm::mat4 view = glm::lookAt(glm::vec3(0, 10, -10), glm::vec3(0, 3, 0), glm::vec3(0, 3, 0));
         glm::mat4 projection = glm::perspective(glm::radians(65.0f), width / (float)height, 0.1f, 100.0f);
 
         glUniformMatrix4fv(worldLoc, 1, GL_FALSE, glm::value_ptr(world));
@@ -146,7 +146,7 @@ int main()
         
         glm::mat4 model = glm::mat4(1.0f);
         //model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f)); // translate it down so it's at the center of the scene
-        //model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));	// it's a bit too big for our scene, so scale it down
+        model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));	// it's a bit too big for our scene, so scale it down
         ourShader.setMat4("model", model);
         backpack.Draw(ourShader);
 
